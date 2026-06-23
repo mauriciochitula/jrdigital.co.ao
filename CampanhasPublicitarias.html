@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JR Digital - Online - Campanhas Publicitárias</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animaca.css">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="1234.png" alt="Logo JR Digital" class="logo-nav">
+      </a>
+      <!-- Botão Voltar -->
+      <button class="btn btn-warning ms-auto" onclick="history.back()">Voltar</button>
+    </div>
+  </nav>
+
+ <!-- Campanhas Publicitárias -->
+<section id="campanhas" class="py-5 text-light text-center">
+  <div class="container">
+    <h2 class="text-warning animate__animated animate__fadeInDown">Campanhas Publicitárias</h2>
+    <div class="row mt-4">
+      <div class="col-md-4 animate__animated animate__fadeInUp">
+        <img src="700208264_122214660062308633_7011877875367723989_n.jpg" class="img-fluid border border-warning rounded portfolio-img" alt="Projeto 1">
+      </div>
+      <div class="col-md-4 animate__animated animate__fadeInUp animate__delay-1s">
+        <img src="730153106_18139182559497746_134639665648643162_n.jpg" class="img-fluid border border-warning rounded portfolio-img" alt="Projeto 2">
+      </div>
+      <div class="col-md-4 animate__animated animate__fadeInUp animate__delay-2s">
+        <img src="700078994_122214660098308633_1207575356163929372_n.jpg" class="img-fluid border border-warning rounded portfolio-img" alt="Projeto 3">
+      </div>
+      <div class="col-md-4 animate__animated animate__fadeInUp animate__delay-3s">
+        <img src="502726582_122176227254308633_4975969420066922042_n.jpg" class="img-fluid border border-warning rounded portfolio-img" alt="Projeto 4">
+      </div>
+      <div class="col-md-4 animate__animated animate__fadeInUp animate__delay-4s">
+        <img src="502527642_122176227314308633_5313159806025260720_n.jpg" class="img-fluid border border-warning rounded portfolio-img" alt="Projeto 5">
+      </div>
+      <div class="col-md-4 animate__animated animate__fadeInUp animate__delay-5s">
+        <img src="502517117_122176227224308633_1435636563182743646_n.jpg" class="img-fluid border border-warning rounded portfolio-img" alt="Projeto 6">
+      </div>
+      <div class="col-md-4 animate__animated animate__fadeInUp animate__delay-6s">
+        <img src="674368839_122212001132308633_6159708018851446276_n.jpg" class="img-fluid border border-warning rounded portfolio-img" alt="Projeto 7">
+      </div>
+      <div class="col-md-4 animate__animated animate__fadeInUp animate__delay-7s">
+        <img src="Gemini_Generated_Image_53cuwn53cuwn53cu.png" class="img-fluid border border-warning rounded portfolio-img" alt="Projeto 8">
+      </div>
+      <div class="col-md-4 animate__animated animate__fadeInUp animate__delay-8s">
+        <img src="Gemini_Generated_Image_53cuwn53cuwn53cu.png" class="img-fluid border border-warning rounded portfolio-img" alt="Projeto 9">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- Contato -->
+<section id="contato" class="bg-dark py-5 text-center">
+  <div class="container">
+    <div class="row">
+      <!-- Coluna Contato -->
+      <div class="col-md-6">
+        <h2 class="text-warning animate__animated animate__fadeInDown">Contatos</h2>
+        <p>
+          Email: 
+          <a href="mailto:jrdigital560@gmail.com" class="text-warning">
+            jrdigital560@gmail.com
+          </a>
+        </p>
+        <p>
+          Telefone/Whatsapp: 
+          <a href="https://wa.me/244976313717" target="_blank" class="text-warning">
+            +244 976 313 717
+          </a>
+        </p>
+        <p>
+          Telefone/Whatsapp: 
+          <a href="https://wa.me/244927776816" target="_blank" class="text-warning">
+            +244 927 776 816
+          </a>
+        </p>
+      </div>
+        <!-- Coluna Sobre Nós -->
+        <div class="col-md-6">
+          <h2 class="text-warning animate__animated animate__fadeInDown">Sobre Nós</h2>
+          <p class="animate__animated animate__fadeInUp">
+            Somos a JR Digital, uma agência de marketing especializada em soluções criativas e estratégias digitais para impulsionar marcas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="text-warning text-center py-3">
+    <p>&copy; 2026 JR Digital - Agência de Marketing</p>
+  </footer>
+
+  <!-- Modal para imagens -->
+  <div class="modal fade" id="imageModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="modalImage" src="" class="img-fluid rounded border border-warning" alt="Imagem Grande">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script para abrir imagens no modal -->
+  <script>
+    const portfolioImages = document.querySelectorAll('.portfolio-img');
+    const modalImage = document.getElementById('modalImage');
+
+    portfolioImages.forEach(img => {
+      img.addEventListener('click', () => {
+        modalImage.src = img.src;
+        const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+        modal.show();
+      });
+    });
+  </script>
+</body>
+</html>

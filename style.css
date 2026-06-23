@@ -1,0 +1,196 @@
+/* ===== Reset básico ===== */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000; /* fundo preto */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background-color: #002850; /* azul escuro */
+  position: sticky; /* fixa no topo */
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand img {
+  height: 50px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1);
+}
+
+.nav-link {
+  color: gold !important;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fff !important;
+}
+
+/* Botão Voltar */
+.btn-warning {
+  border-radius: 25px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+}
+
+/* ===== Carousel ===== */
+.carousel-item img {
+  width: 100%;
+  height: 590px;
+  object-fit: contain; /* mostra a imagem completa */
+  background-color: #000; /* fundo preto para preencher espaços */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px gold;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(255, 215, 0, 0.7); /* dourado translúcido */
+  border-radius: 50%;
+}
+
+/* ===== Seções ===== */
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  color: gold;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* ===== Cards de Serviços ===== */
+.card {
+  background: #002850; /* azul escuro */
+  color: gold;
+  border: 2px solid gold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px gold;
+}
+
+/* Botões de Serviços */
+#servicos .btn {
+  background-color: gold;
+  color: #001f3f; /* azul escuro */
+  border: 2px solid gold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 15px; /* espaçamento entre botões no mobile */
+}
+
+#servicos .btn:hover {
+  background-color: #001f3f;
+  color: gold;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px gold;
+}
+
+/* ===== Portfólio ===== */
+#portfolio .col-md-4 {
+  margin-bottom: 20px; /* espaçamento entre cards no desktop */
+}
+
+@media (max-width: 768px) {
+  #portfolio .col-md-4 {
+    margin-bottom: 25px; /* mais espaço no mobile */
+  }
+}
+
+#portfolio img {
+  background: #002850;
+  border: 3px solid gold;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#portfolio img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px gold;
+}
+
+/* ===== Gestão de Redes Sociais ===== */
+#gestao-redes-sociais .col-md-4 {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  #gestao-redes-sociais .col-md-4 {
+    margin-bottom: 25px;
+  }
+}
+
+/* ===== Atividades (Design Gráfico) ===== */
+#Atividades .col-md-4 {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  #Atividades .col-md-4 {
+    margin-bottom: 25px;
+  }
+}
+
+/* ===== Campanhas Publicitárias ===== */
+#campanhas .col-md-4 {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  #campanhas .col-md-4 {
+    margin-bottom: 25px;
+  }
+}
+
+/* ===== Modal ===== */
+.modal-content {
+  background-color: rgba(0,0,0,0.9); /* fundo escuro translúcido */
+}
+
+/* ===== Contato ===== */
+#contato p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* ===== Rodapé ===== */
+footer {
+  border-top: 2px solid gold;
+  background: #002850;
+  color: gold;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 300px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  #portfolio img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
